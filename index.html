@@ -10,11 +10,79 @@
 
 </head>
 <body>
-  <h1>Hola, soy Ailén</h1>
-  <p>Bienvenido a mi portfolio.</p>
-  <h2>Te invito a conocer mis trabajos</h2>
-  <h3>Si tenés alguna duda, escribime</h3>
+    <header>
+        <h1 class="logo">Ailen Echaguibel</h1>
+        <nav class="navbar">
+            <ul class="links">
+                <li><a href="mi">Sobre mi</a></li>
+                <li><a href="proyectos">Poyectos</a></li>
+                <li><a href="contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="hero">
+        <h2>Soy Ailén</h2>
+        <p>Desarrolladora Full Stack</p>
+        <a href="#proyectos" class="btn">Mirá mis proyectos</a>
 
-  <button>Mis proyectos</button>
+    </section>
+    <section class="sobre-mi">
+        <h3>Para que me conozcas un poco mas: </h3>
+        <p>Soy Desarrolladora Full Stack Junior con una marcada orientación hacia el Front End. 
+            Mi experiencia previa en fotografía y periodismo me aporta una mirada creativa, 
+            sensibilidad estética y habilidades de comunicación que aplico al desarrollo web. 
+            Me considero resolutiva, proactiva y con gran capacidad de adaptación. Disfruto trabajar en equipo, 
+            aprender nuevas tecnologías y enfrentar desafíos que me impulsen a crecer en el mundo tech.</p>
+    </section>
+
+    <section id="sobre-mi">
+        <h2>Sobre mí</h2>
+    </section>
+
+    <section id="proyectos">
+        <h2>Proyectos</h2>
+        <div class="proyecto">
+            <img src="img/dashboard.png" alt="Dashboard con reloj, clima y contraseñas">
+            <h3>Dashboard Interactivo</h3>
+            <div class="btns">
+            <a href="https://demo-dashboard.com" target="_blank" class="btn">Ver Demo</a>
+            <a href="https://github.com/tuusuario/dashboard" target="_blank" class="btn">Código</a>
+        </div>
+  </div>
+
+  <div class="proyecto">
+    <img src="img/tienda.png" alt="E-commerce de ropa">
+    <h3>Tienda de Ropa</h3>
+    <div class="btns">
+      <a href="https://demo-tienda.com" target="_blank" class="btn">Ver Demo</a>
+      <a href="https://github.com/tuusuario/tienda" target="_blank" class="btn">Código</a>
+    </div>
+  </div>
+
+  <div class="proyecto">
+    <img src="img/porra.png" alt="App de porra ciclista Tour de Francia">
+    <h3>Porra Ciclista</h3>
+    <div class="btns">
+      <a href="https://demo-porra.com" target="_blank" class="btn">Ver Demo</a>
+      <a href="https://github.com/tuusuario/porra" target="_blank" class="btn">Código</a>
+    </div>
+  </div>
+    </section>
+
+    <section id="contacto">
+        <h2>Contacto</h2>
+            <form action="#" method="post" class="form-contacto">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="mensaje">Mensaje</label>
+                <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+
+                <button type="submit" class="btn">Enviar</button>
+            </form>
+    </section>
 </body>
 </html>
