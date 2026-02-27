@@ -2,96 +2,71 @@
 <html lang="es">
 <head>
   <meta charset='UTF-8'>
-  <title>Portafolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel='stylesheet' href='style.css'>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100&family=Poppins:wght@600&display=swap" rel="stylesheet">
+  <title>Portafolio</title>
+  
+  <link rel='stylesheet' href='style.css'>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100&family=Poppins:wght@600&display=swap" rel="stylesheet">
+  
 
 </head>
 <body>
     <header>
-
-        <h1 class="logo">Ailen Echaguibel</h1>
+      <div class="container-navbar">
+        <div class="logo-header">
+          <h3>Ailén Echaguibel</h3>
+        </div>
 
         <div class="navbar">
             <div class="links">
                 <a href="sobre-mi.html">Sobre mi</a>
-                <a href="proyectos.html">Poyectos</a>
+                <a href="portafolio.html">Portafolio</a>
                 <a href="contacto.html">Contacto</a>
             </div> 
-          </div>
-
+        </div>
+      </div>
     </header>
 
-    <div class="hero">
-        <h2>Soy Ailén</h2>
-        <p>Desarrolladora Full Stack</p>
-        <a href="proyectos.html" class="mis-proyectos">Acá podrás ver algo de mi codigo</a>
+    <div class="container-hero">
 
-    </div>
-
-    <div class="sobre-mi">
-        <h3>Para que me conozcas un poco mas: </h3>
-        <p>Soy Desarrolladora Full Stack Junior con una marcada orientación hacia el Front End. 
-            Mi experiencia previa en fotografía y periodismo me aporta una mirada creativa, 
-            sensibilidad estética y habilidades de comunicación que aplico al desarrollo web. 
-            Me considero resolutiva, proactiva y con gran capacidad de adaptación. Disfruto trabajar en equipo, 
-            aprender nuevas tecnologías y enfrentar desafíos que me impulsen a crecer en el mundo tech.</p>
-    </div>
-
-   
-
-    <div class="project-wrapper">
-
-      <h2>Proyectos</h2>
-
-        <div class="project">
-          <img src="img/dashboard.png" alt="Dashboard con reloj, clima y contraseñas">
-            <h3>Dashboard Interactivo</h3>
-              <div class="btns">
-                <a href="https://demo-dashboard.com" target="_blank" class="btn">Ver Demo</a>
-                <a href="https://github.com/tuusuario/dashboard" target="_blank" class="btn">Código</a>
-              </div>
-        </div>      
- 
-
-        <div class="project">
-          <img src="img/tienda.png" alt="E-commerce de ropa">
-            <h3>Tienda de Ropa</h3>
-              <div class="btns">
-                <a href="https://demo-tienda.com" target="_blank" class="btn">Ver Demo</a>
-                <a href="https://github.com/tuusuario/tienda" target="_blank" class="btn">Código</a>
-              </div>
+      <div class="hero-slider">
+        <div class="slider">
+          <div class="sliders">
+            <img src="/images/AE__0167.jpg" alt="foto 1" class="slide-active">
+            <img src="/images/AE__0371.JPG" alt="foto 2" class="slide">
+            <img src="/images/AE__0387.JPG" alt="foto 3" class="slide">
+            <img src="/images/AE__0390.JPG" alt="foto 4" class="slide">
+            <img src="/images/AE__0504.JPG" alt="foto 5" class="slide">
+            <img src="/images/DSC_3962.JPG" alt="foto 5" class="slide">
+          </div>
         </div>
+      </div>
 
-        <div class="project">
-          <img src="img/porra.png" alt="App de porra ciclista Tour de Francia">
-            <h3>Porra Ciclista</h3>
-              <div class="btns">
-                <a href="https://demo-porra.com" target="_blank" class="btn">Ver Demo</a>
-                <a href="https://github.com/tuusuario/porra" target="_blank" class="btn">Código</a>
-              </div>
+      <div class="hero-presentacion">
+        <div class="hero">
+          <div class="presentacion">
+            <h2>Soy Ailén</h2>
+            <h4>Fotógrafa</h4>
+            <p>Amante de los paisajes, de las costumbres y los detalles</p>
+          </div>
+          <div class="acceso-porfolio">
+            <a href="portafolio.html" class="btn-portafolio">Mi portafolio</a>
+          </div>
         </div>
+      </div>
+    </div>
+    
+
+    <div class="footer">
+      <div class="container-footer">
+          <p>© 2026 Ailén Echaguibel</p>
+          <a href="ailenechaguibel@gmail.com">ailenechaguibel@gmail.com</a>
+      </div>
     </div>
 
-    <div class="contact">
-
-        <h2>Contacto</h2>
-
-            <form action="#" method="post" class="form-contacto">
-                <label for="nombre">Nombre</label>
-                <input type="text" id="nombre" name="nombre" required>
-
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" required>
-
-                <label for="mensaje">Mensaje</label>
-                <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
-
-                <button type="submit" class="btn">Enviar</button>
-            </form>
-    </div>
 </body>
+<script src="script.js"></script>
 </html>
